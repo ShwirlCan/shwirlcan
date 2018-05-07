@@ -2,6 +2,7 @@
 Originally Base-Derived from selfbot and ami by soulblaze and quanta
 
 By- SoulBlaze#5580, for Shwirlcan
+'''
 import os
 import discord
 from discord.ext import commands
