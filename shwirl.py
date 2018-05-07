@@ -2,7 +2,6 @@
 Originally Base-Derived from selfbot and ami by soulblaze and quanta
 
 By- SoulBlaze#5580, for Shwirlcan
-'''
 import os
 import discord
 from discord.ext import commands
@@ -15,9 +14,9 @@ import datetime
 import aiohttp
 
 
-class ShwirlBot(commands.Bot):
+class AmiBot(commands.Bot):
     '''
-    A personal bot for Shan#1250
+    A Bot Made by ~  Liam#3273 and Quanta#5556
     '''
     mentions_transforms = {
           '@everyone': '@\u200beveryone',
@@ -58,7 +57,7 @@ class ShwirlBot(commands.Bot):
     @classmethod
     def init(bot, token = None):
         '''RUN THE BOT'''
-        shwirlbot = bot()
+        amibot = bot()
         with open('data/config.json') as f:
             config = json.load(f)
             if config["TOKEN"] == "your_token_here":
@@ -67,7 +66,7 @@ class ShwirlBot(commands.Bot):
             else:
                 token = config["TOKEN"]
         try:
-            shwirlbot.run(token, bot = True, reconnect = True)
+            amibot.run(token, bot = True, reconnect = True)
         except Exception as e:
             print(e)
 
@@ -78,7 +77,7 @@ class ShwirlBot(commands.Bot):
         '''SET THE UPTIME'''
         self.uptime = datetime.datetime.utcnow()
         server = str(+len(self.guilds))
-        await self.change_presence(activity=discord.Game(name="Shipping Shwirl In "+server+" Guilds"))
+        await self.change_presence(activity=discord.Game(name="ophelp | In "+server+" Guilds"))
 
     async def on_command(self, ctx):
         cmd = ctx.command.qualified_name.replace(' ', '_')
@@ -102,4 +101,4 @@ class ShwirlBot(commands.Bot):
 
 
 if __name__ == '__main__':
-    ShwirlBot.init()
+    AmiBot.init()
