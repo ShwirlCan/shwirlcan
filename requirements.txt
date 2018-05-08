@@ -13,4 +13,5 @@ moviepy
 spice_api
 cleverwrap
 aiohttp
+discord
 
