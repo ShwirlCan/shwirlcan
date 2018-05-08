@@ -2,8 +2,8 @@
 
 A bot made to be only used by Shan and Swirl.
 
-Made by - SoulBlaze
-Original Files from Ami and Selfbot
+Made by - SoulBlaze.
+Original Files from Ami and Selfbot.
 Originally by Soulblaze and Quanta
 
 
